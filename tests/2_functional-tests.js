@@ -92,6 +92,9 @@ suite('Functional Tests', function() {
         .end(function(error, res) {
           assert.equal(res.status, 200);
           assert.equal(res.type, 'application/json');
+          assert.property(res.body[0], 'issue_title');
+          assert.property(res.body[0], 'created_by');
+          assert.property(res.body[0], 'updated_on');
           done();
         });  
     });
