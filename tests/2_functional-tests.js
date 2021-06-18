@@ -6,7 +6,7 @@ const server = require('../server');
 chai.use(chaiHttp);
 
 suite('Functional Tests', function() {
-  suite('CRUD', function() {
+  suite('Routing test', function() {
     let _id = '';
     // #1
     test('create an issue with every field', function(done) {
@@ -246,3 +246,4 @@ suite('Functional Tests', function() {
     });
   });
 });
+
